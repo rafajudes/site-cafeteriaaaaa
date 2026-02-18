@@ -491,6 +491,15 @@ section .portifolio h2 {
     .topo-do-site{
         width: 100%;
     }
+    .logo {
+    position: relative;
+    z-index: 100000;
+}
+
+
+    .logo img {
+        max-width: 110px;
+    }
 
    
 
@@ -604,9 +613,7 @@ footer .flex{
     display: none;
 }
 
-.menu-desktop , .btn-contato {
-    display: none;
-    }
+
 
 html {
     scroll-behavior: smooth;
@@ -658,6 +665,116 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+/* Header base */
+header {
+    background-color: #4b2e2b;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Container */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+/* Menu desktop */
+.menu-desktop ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu-desktop a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Botão menu */
+.btn-abrir-menu {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MENU MOBILE */
+.menu-mobile {
+    background-color: #4b2e2b;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    transition: .4s;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.menu-mobile.abrir-menu {
+    right: 0;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.menu-mobile ul li {
+    margin-bottom: 20px;
+}
+
+.menu-mobile a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Overlay */
+.overlay-menu {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 8888;
+}
+
+.overlay-menu.ativo {
+    display: block;
+}
+
+/* MOBILE */
+@media screen and (max-width:768px){
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+}
+
+
+
+
 
 
 
