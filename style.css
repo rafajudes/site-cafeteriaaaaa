@@ -15,7 +15,7 @@ body{
 
 .flex{
     display: flex;
-    gap: 300px;
+    gap: 40px;
     align-items: center;
     
 }
@@ -27,8 +27,9 @@ header {
 
 header > .interface {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    padding: 0
 }
 
 header a {
@@ -186,6 +187,7 @@ header .btn-contato button:hover{
     .topo-do-site .img-topo-site{
         position: relative;
         animation: flutuar 2s ease-in-out infinite alternate;
+        width: 100%;
     }
 
     @keyframes flutuar{
@@ -201,8 +203,8 @@ header .btn-contato button:hover{
 
 
     section.especialidades {
-        padding: 40px 4%;
-        box-shadow: 0 0 40px 10px rgba(189, 93, 4, 0.87);
+        padding: 80px 0%;
+        box-shadow: 0 0 40px 10px rgba(211, 105, 6, 0.363);
 
     }
 
@@ -283,7 +285,7 @@ header .btn-contato button:hover{
 }
 
 section.sobre {
-    padding: 40px 4%;
+    padding: 80px 0%;
     box-shadow: 0 0 40px 10px rgba(189, 93, 4, 0.24);
     
 }
@@ -319,7 +321,12 @@ color: #333232;
 .sobre .txt-sobre{
     margin: 30px 0;
     text-align: justify;
+    
 
+}
+
+.sobre .img-sobre{
+    width: 100%;
 }
 
 .btn-social button {
@@ -435,13 +442,7 @@ section .portifolio h2 {
         margin-top: 40px;
     }
     
-    .contato .btn-enviar input {
-    background-color: #f1e3d3; /* bege clarinho */
-    color: rgb(100, 50, 2);
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
+    
 
 .formulario h2{
     font-size: 50px;
@@ -485,7 +486,26 @@ section .portifolio h2 {
   }
  
 
-  @media screen and (max-width:1020px){
+  @media screen and (max-width:768px){
+
+    .topo-do-site{
+        width: 100%;
+    }
+
+   
+
+    .topo-do-site .img-topo-site{
+        animation: none;
+        top: 0;
+    }
+
+    .flex{
+        gap: 24px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
 
     .flex{
         flex-direction: column;
@@ -495,6 +515,7 @@ section .portifolio h2 {
     h2.titulo {
         font-size: 34px;
         line-height: 30px;
+        text-align: center;
     }
 
 
@@ -505,19 +526,22 @@ section .portifolio h2 {
 
 
     section.topo-do-site{
-        padding: 20px 8%;
+        padding: 32px 16px;
+        text-align: center;
         }
 
 
 
     .topo-do-site h1{
-    font-size: 60px;
-    line-height: 85px;
+    font-size: 36px;
+    line-height: 42px;
     }
 
 
     .topo-do-site .img-topo-site{
-        width: 100%;
+        width: 80%;
+       margin-top: 20px;
+        
     }
 
 
@@ -563,7 +587,10 @@ footer .flex{
 
     }
 
+    
 }
+
+
 
 .menu-mobile {
     transition: .5s;
@@ -579,7 +606,68 @@ footer .flex{
 
 .menu-desktop , .btn-contato {
     display: none;
+    }
+
+html {
+    scroll-behavior: smooth;
 }
+
+.topo-do-site {
+    background-color: #6f4e37;
+}
+
+header {
+    padding: 15px 0;
+}
+
+
+.portifolio {
+    background-color: #ede0d4;
+}
+
+.mensagem-sucesso {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1e4d6;
+    color: #4b2e2b;
+    border-radius: 8px;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.formulario button {
+    background-color: #3a1d02;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
