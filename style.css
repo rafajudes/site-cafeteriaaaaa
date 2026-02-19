@@ -585,24 +585,7 @@ footer .flex{
 
     }
 
-    
-}
-
-
-
-.menu-mobile {
-    transition: .5s;
-}
-
-.menu-mobile.abrir-menu {
-    width: 70%;
-}
-
-.overlay-menu {
-    display: none;
-}
-
-/* novos comandos */
+    /* novos comandos */
 
 * {
     margin: 0;
@@ -620,6 +603,25 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+    
+}
+
+
+
+.menu-mobile {
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.overlay-menu {
+    display: none;
+}
+
+
 
 
 
