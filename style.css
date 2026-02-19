@@ -15,7 +15,6 @@ body {
     overflow-x: hidden;
 }
 
-
 /* novos comandos */
 
 body{
@@ -30,8 +29,6 @@ body{
 .flex{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    align-items: center;
     
 }
 
@@ -499,17 +496,15 @@ section .portifolio h2 {
   footer .line-footer p a{
     color: #fff;
   }
-
-  
  
 
   @media screen and (max-width:768px){
 
     .topo-do-site{
         width: 100%;
-    }
+    } 
 
-    /* novos comandos */
+    /* novo comando */
     @media screen and (max-width:768px){
 
     .flex {
@@ -518,11 +513,9 @@ section .portifolio h2 {
         text-align: center;
     }
 
-    
-
 }
 
-    /* novos comandos */
+    /* novo comando */
     
 
 
@@ -586,13 +579,13 @@ section .portifolio h2 {
     }
 
 .sobre .txt-sobre h2{
-font-size: 50px;
+font-size: 40px;
 line-height: 60px;
 margin-bottom: 30px;
 }
 
 .sobre .txt-sobre p{
-    font-size: 15px;
+    font-size: 20px;
 
 }
 
@@ -617,8 +610,24 @@ footer .flex{
 
     }
 
-    
+    /* novos comandos */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interface {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
     
 }
