@@ -505,15 +505,7 @@ section .portifolio h2 {
     } 
 
     /* novo comando */
-    @media screen and (max-width:768px){
-
-    .flex {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-}
+    
 
     /* novo comando */
     
@@ -645,6 +637,38 @@ img {
 .overlay-menu {
     display: none;
 }
+
+@media screen and (max-width:768px){
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+
+    .menu-desktop {
+        display: block;
+    }
+
+    .btn-abrir-menu {
+        display: none;
+    }
+
+    .flex {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+}
+
+
+
 
 
 
