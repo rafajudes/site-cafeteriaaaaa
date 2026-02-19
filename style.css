@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* novos comandos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* novos comandos */
+
 body{
     background-color:  rgb(100, 50, 2);;
 }
@@ -15,6 +29,7 @@ body{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     align-items: center;
     
@@ -484,6 +499,8 @@ section .portifolio h2 {
   footer .line-footer p a{
     color: #fff;
   }
+
+  
  
 
   @media screen and (max-width:768px){
@@ -491,6 +508,21 @@ section .portifolio h2 {
     .topo-do-site{
         width: 100%;
     }
+
+    /* novos comandos */
+    @media screen and (max-width:768px){
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+}
+
+    /* novos comandos */
     
 
 
@@ -554,13 +586,13 @@ section .portifolio h2 {
     }
 
 .sobre .txt-sobre h2{
-font-size: 40px;
+font-size: 50px;
 line-height: 60px;
 margin-bottom: 30px;
 }
 
 .sobre .txt-sobre p{
-    font-size: 20px;
+    font-size: 15px;
 
 }
 
@@ -585,24 +617,8 @@ footer .flex{
 
     }
 
-    /* novos comandos */
+    
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.interface {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 4%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
     
 }
